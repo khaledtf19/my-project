@@ -55,7 +55,7 @@ button:hover {
 h3 {
   font-size: 1rem;
 }
-input[type="text"] {
+input {
   font-family: "Cairo", sans-serif;
   width: 50%;
   border: 2px solid #aaa;

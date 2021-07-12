@@ -35,7 +35,7 @@ class InputComponent extends Component {
           <div className="inputs">
             <label>التاريخ </label>
             <input
-              type="text"
+              type="date"
               name="input4"
               onChange={this.props.onInput}
               value={this.props.inputValue["input4"]}
