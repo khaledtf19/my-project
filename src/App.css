@@ -81,7 +81,7 @@ label {
   font-size: 2rem;
   line-height: 5rem;
 }
-/* @media screen and (min-width: 300px) {
+/* @media (min-width: 300px) {
   h2 {
     position: relative;
     top: 40px;
