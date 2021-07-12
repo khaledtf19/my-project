@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import React, { Component } from "react";
+import InputComponent from "./componts/inputComponent";
+import OutputComponant from "./componts/outputComponent";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    input: {},
+    message: {},
+  };
+  handleSubmit = () => {
+    this.setState({
+      input: this.state.input,
+      message: this.state.input,
+    });
+  };
+
+  handleChange = (event) => {
+    this.setState({
+      input: Object.assign(this.state.input, {
+        [event.target.name]: [event.target.value],
+      }),
+      messages: this.state.messages,
+    });
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <div className="containar">
+          <InputComponent
+            onInput={this.handleChange}
+            inputValue={this.state.input}
+            onSubmit={this.handleSubmit}
+          />
+          <div className="output">
+            <OutputComponant outputValue={this.state.message} />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
