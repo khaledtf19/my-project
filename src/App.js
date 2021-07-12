@@ -3,6 +3,7 @@ import "./App.css";
 import React, { Component } from "react";
 import InputComponent from "./componts/inputComponent";
 import OutputComponant from "./componts/outputComponent";
+import NavBar from "./componts/navBar";
 
 class App extends Component {
   state = {
@@ -28,6 +29,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="navbar">
+          <NavBar />
+        </div>
         <div className="containar">
           <InputComponent
             onInput={this.handleChange}
