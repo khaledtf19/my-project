@@ -9,7 +9,7 @@ class InputComponent extends Component {
             <label>اسم العميل</label>
             <input
               type="text"
-              value={this.props.inputValue["input1"]}
+              value={this.props.inputValue.input1}
               onChange={this.props.onInput}
               name="input1"
             />
@@ -20,7 +20,7 @@ class InputComponent extends Component {
               type="text"
               name="input2"
               onChange={this.props.onInput}
-              value={this.props.inputValue["input2"]}
+              value={this.props.inputValue.input2}
             />
           </div>
           <div className="inputs">
@@ -29,7 +29,7 @@ class InputComponent extends Component {
               type="text"
               name="input3"
               onChange={this.props.onInput}
-              value={this.props.inputValue["input3"]}
+              value={this.props.inputValue.input3}
             />
           </div>
           <div className="inputs">
@@ -38,7 +38,7 @@ class InputComponent extends Component {
               type="date"
               name="input4"
               onChange={this.props.onInput}
-              value={this.props.inputValue["input4"]}
+              value={this.props.inputValue.input4}
             />
           </div>
           <div className="inputs">
@@ -47,7 +47,7 @@ class InputComponent extends Component {
               type="text"
               name="input5"
               onChange={this.props.onInput}
-              value={this.props.inputValue["input5"]}
+              value={this.props.inputValue.input5}
             />
           </div>
           <div className="inputs">
@@ -56,7 +56,7 @@ class InputComponent extends Component {
               type="text"
               name="input6"
               onChange={this.props.onInput}
-              value={this.props.inputValue["input6"]}
+              value={this.props.inputValue.input6}
             />
           </div>
           <div className="sbmitdiv">

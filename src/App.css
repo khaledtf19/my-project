@@ -6,10 +6,6 @@
 body {
   background-color: #282c34;
   min-height: 100vh;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
-
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -66,7 +62,7 @@ input {
   box-sizing: border-box;
   font-size: 1.5rem;
 }
-input[type="text"]:focus {
+input:focus {
   border-color: dodgerblue;
   box-shadow: 0 0 5px 0 dodgerblue;
 }
@@ -81,13 +77,12 @@ label {
   font-size: 2rem;
   line-height: 5rem;
 }
-/* @media (min-width: 300px) {
-  h2 {
-    position: relative;
-    top: 40px;
-    left: 40px;
+@media (max-width: 500px) {
+  .containar {
+    flex-direction: column;
+    font-size: 2rem;
   }
-} */
+}
 .sbmitdiv {
   width: 100%;
   display: flex;
