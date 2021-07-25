@@ -9,7 +9,10 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.nav-bar {
+.navbar {
+  background-color: hsl(220, 27%, 45%);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 }
 .containar {
   display: flex;

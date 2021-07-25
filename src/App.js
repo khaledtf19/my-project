@@ -29,9 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="navbar">
-          <NavBar />
-        </div>
+        <NavBar />
         <div className="containar">
           <InputComponent
             onInput={this.handleChange}
